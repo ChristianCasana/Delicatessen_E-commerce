@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+:root {
+    --color-button: rgba(87, 61, 238, 0.6);
+    --z-iconCart: 1000;
+    --z-contentShopping:500;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', serif; 
+}
+
+ button {
+     outline: none;
+     border: none;
+     cursor: pointer;
+     padding: 0.5em;
+     font-size: .7em;   
+     border-radius: 5px;
+     background-color: var(--color-button);
+ }
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 20%;
+}
+
+p {
+    font-size: 1em;
+    color: blue;
+    text-align: center;
+}
+
+body {
+    background-image: url(https://media.istockphoto.com/vectors/rice-background-pattern-vector-id1344207747?b=1&k=20&m=1344207747&s=612x612&w=0&h=KDUcEPBbQ7Ldz0-4rPv6LUiG_pPXj3vWYvKO0bB1yfA=);
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: antiquewhite;
+    color: chocolate;
+    padding: 1em;
+    font-size: 30px;
+}
+
+.tittle {
+    color: chocolate;
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 70px;
+    margin: auto;
+}
+
+.cartShopping {
+    cursor: pointer;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    transition: opacity 0.5s;
+    z-index: var(--z-iconCart);
+}
+
+.cartShopping:hover {
+    opacity: 0.6;
+}
+
+.container-principal {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.content-delicatessen {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1em;
+    padding: 1em 1em;
+}
+
+.delicatessen {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+
+.delicatessen-img {
+    width: 240px;
+    height: 240px;    
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.container-shopping {
+    width: 30vh;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem rgba(0, 0,0, 0.175);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: var(--z-contentShopping);
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+    margin-right: -100%;
+    padding: 0.3em;
+    transition: margin-right 0.5s;
+    overflow-y: scroll;
+}
+
+.show-shopping {
+    margin-right: 0;
+}
+
+.content-shopping {
+    height: 80%;
+}
+
+.content-total {
+    height: 10%;
+    margin-top: 3em;
+    padding: 1em ;
+}
+
+.content-total p {
+    font-size: 1em;
+    color: red;
+}
+
+.shopping-img {   
+    width: 200px;
+    margin-top: .2em;     
+}
+
+.shopping-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    align-items: flex-start; 
+}
+
+.rest,
+.add,
+.del {
+    cursor: pointer;
+}
+
+.content-cartShopping {
+    position: relative;
+}
+
+.content-cartShopping span {
+    position: absolute;
+    top:-8px;
+    right: -8px;
+    font-size: 1.2em;
+    color: red;
+}

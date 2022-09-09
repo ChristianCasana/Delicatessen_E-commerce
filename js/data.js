@@ -1,0 +1,58 @@
+export const data = [
+{
+    id:1,
+    name:"Tartaleta de Fresa",
+    urlImages:"./images/imagen1.jpg",
+    stock: 8,
+    price: 50,
+},
+{
+    id:2,
+    name:"Torta Rosa",
+    urlImages:"./images/imagen2.jpg",
+    stock: 10,
+    price: 65,
+},
+{
+    id:3,
+    name:"Crema Volteada",
+    urlImages:"./images/imagen3.jpg",
+    stock: 12,
+    price: 60,
+},
+{
+    id:4,
+    name:"Tres Leches",
+    urlImages:"./images/imagen4.jpg",
+    stock: 7,
+    price: 75,
+},
+{
+    id:5,
+    name:"Torta Chocolate",
+    urlImages:"./images/imagen5.jpg",
+    stock: 11,
+    price: 62,
+},
+{
+    id:6,
+    name:"Torta Cumpleaños",
+    urlImages:"./images/imagen6.jpg",
+    stock: 5,
+    price: 62,
+},
+{
+    id:7,
+    name:"Torta Dulce",
+    urlImages:"./images/imagen7.jpg",
+    stock: 6,
+    price: 90,
+},
+{
+    id:8,
+    name:"Pie Limón",
+    urlImages:"./images/imagen8.jpg",
+    stock: 13,
+    price: 70,
+},
+]
